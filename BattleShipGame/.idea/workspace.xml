@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="BattleShip:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7daf2488-8a1a-4675-bb18-48523ff7a4ab" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1S3VIwnyJLBZjdcIAfstAKOopoD" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Seminars/Seminar_8" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="battleship" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.OceanTest">
+    <configuration name="BattleshipGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="main.battleship.BattleshipGame" />
+      <module name="BattleShip" />
+      <extension name="coverage" track_test_folders="true">
+        <pattern>
+          <option name="PATTERN" value="main.battleship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OceanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BattleShip" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="battleship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="battleship" />
+      <option name="MAIN_CLASS_NAME" value="battleship.OceanTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OceanTest.getHitCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BattleShip" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="battleship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="battleship" />
+      <option name="MAIN_CLASS_NAME" value="battleship.OceanTest" />
+      <option name="METHOD_NAME" value="getHitCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.BattleshipGame" />
+      <item itemvalue="JUnit.OceanTest" />
+      <item itemvalue="JUnit.OceanTest.getHitCount" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OceanTest" />
+        <item itemvalue="JUnit.OceanTest.getHitCount" />
+        <item itemvalue="Application.BattleshipGame" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7daf2488-8a1a-4675-bb18-48523ff7a4ab" name="Default Changelist" comment="" />
+      <created>1570792189182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570792189182</updated>
+      <workItem from="1570792193061" duration="10728000" />
+      <workItem from="1570825545648" duration="744000" />
+      <workItem from="1570871027983" duration="3226000" />
+      <workItem from="1570877263581" duration="2538000" />
+      <workItem from="1570883359946" duration="305000" />
+      <workItem from="1570887367361" duration="4587000" />
+      <workItem from="1570963504281" duration="5846000" />
+      <workItem from="1570976405078" duration="5175000" />
+      <workItem from="1570981648063" duration="304000" />
+      <workItem from="1570983852412" duration="2022000" />
+      <workItem from="1571067093133" duration="1069000" />
+      <workItem from="1571070612252" duration="1019000" />
+      <workItem from="1571071772987" duration="4057000" />
+      <workItem from="1571133029644" duration="3455000" />
+      <workItem from="1571137633545" duration="652000" />
+      <workItem from="1571138406812" duration="1413000" />
+      <workItem from="1571156309210" duration="271000" />
+      <workItem from="1571166244035" duration="75000" />
+      <workItem from="1572337019943" duration="1781000" />
+      <workItem from="1572940576150" duration="271000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BattleShip$OceanTest_getHitCount.ic" NAME="OceanTest.getHitCount Coverage Results" MODIFIED="1572338314827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>battleship.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BattleShip$BattleshipGame.ic" NAME="BattleshipGame Coverage Results" MODIFIED="1572338217913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>main.battleship.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BattleShip$OceanTest.ic" NAME="OceanTest Coverage Results" MODIFIED="1572338769838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>battleship.*</FILTER>
+    </SUITE>
+  </component>
+</project>
