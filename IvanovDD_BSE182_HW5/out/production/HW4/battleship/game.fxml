@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="battleship.GameController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" />
+        <ColumnConstraints hgrow="SOMETIMES" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="360.0" minHeight="360.0" prefHeight="360.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="120.0" minHeight="120.0" prefHeight="120.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Button fx:id="buttonCancel" mnemonicParsing="false" text="Cancel" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+        <Button fx:id="buttonInfo" mnemonicParsing="false" text="Info" GridPane.halignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+    </GridPane>
+    <TextArea fx:id="log" focusTraversable="false" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets left="5.0" />
+      </GridPane.margin></TextArea>
+    <GridPane GridPane.columnIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label text="Shots:" GridPane.halignment="LEFT">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="shots" text="0" GridPane.halignment="RIGHT">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+         <GridPane.margin>
+            <Insets right="3.0" />
+         </GridPane.margin>
+        </Label>
+        <Label text="Whole ships:" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="whole" text="10" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+         <GridPane.margin>
+            <Insets right="3.0" />
+         </GridPane.margin>
+        </Label>
+        <Label text="Hit ships:" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="hit" text="0" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+         <GridPane.margin>
+            <Insets right="3.0" />
+         </GridPane.margin>
+        </Label>
+        <Label text="Sunk ships:" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="sunk" text="0" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+         <GridPane.margin>
+            <Insets right="3.0" />
+         </GridPane.margin>
+        </Label>
+        <Label alignment="CENTER" text="Shoot to (x, y)" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+        <TextField alignment="CENTER" maxHeight="40.0" maxWidth="100.0" minHeight="10.0" minWidth="10.0" prefHeight="40.0" prefWidth="60.0" promptText="X coordinate 0-9" GridPane.halignment="CENTER" GridPane.rowIndex="5" fx:id="x">
+            <font>
+                <Font size="11.0" />
+            </font>
+         <GridPane.margin>
+            <Insets left="2.0" right="2.0" />
+         </GridPane.margin>
+        </TextField>
+        <TextField fx:id="y" alignment="CENTER" maxHeight="40.0" maxWidth="100.0" minHeight="10.0" minWidth="10.0" prefHeight="40.0" prefWidth="100.0" promptText="Y coordinate 0-9" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <font>
+                <Font size="11.0" />
+            </font>
+         <GridPane.margin>
+            <Insets left="2.0" right="2.0" />
+         </GridPane.margin>
+        </TextField>
+    </GridPane>
+   <GridPane>
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.0" minWidth="340.0" prefWidth="340.0" />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.0" minWidth="340.0" prefWidth="340.0" />
+     </columnConstraints>
+     <rowConstraints>
+         <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="330.0" minHeight="330.0" prefHeight="330.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <GridPane fx:id="myGameField" GridPane.rowIndex="1">
+            <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <GridPane.margin>
+               <Insets left="10.0" />
+            </GridPane.margin>
+         </GridPane>
+         <GridPane fx:id="opponentGameField" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <GridPane.margin>
+               <Insets left="10.0" />
+            </GridPane.margin>
+         </GridPane>
+         <Label text="Me" GridPane.halignment="CENTER">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </Label>
+         <Label text="Partner" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </Label>
+      </children>
+   </GridPane>
+</GridPane>
